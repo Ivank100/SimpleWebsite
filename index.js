@@ -1,10 +1,5 @@
     
-    document.addEventListener("DOMContentLoaded", function() {
-        // Wait for the SPECTRAL text to finish animating
-        setTimeout(function() {
-            document.body.classList.add('loaded'); // Trigger the transition
-        }, 1000); // Match this timing with the duration of the fadeIn animation
-    });
+ 
     
     const sidebar = document.querySelector('.sidebar');
     const heroBanner = document.querySelector('.hero-banner');

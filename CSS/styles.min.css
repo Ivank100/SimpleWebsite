@@ -29,15 +29,6 @@ p {
   line-height: 1.8em;
 }
 
-body.loaded .hidden-content {
-  opacity: 1;
-  transition: opacity 0.5s ease-in;
-}
-
-.hidden-content {
-  opacity: 0;
-}
-
 /* HERO SECTION */
 .hero-banner {
   height: 100%;
@@ -150,20 +141,6 @@ body.loaded .hidden-content {
   flex-direction: column;
   gap: 40px;
   text-transform: uppercase;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.hero-banner .hero-section .inner-box .hero-section h2 {
-  opacity: 0; /* Start hidden */
-  animation: fadeIn 2s ease-out forwards; /* Apply the animation */
 }
 .hero-banner .hero-section .inner-box h2::before,
 .hero-banner .hero-section .inner-box h2::after {
@@ -496,4 +473,4 @@ body.loaded .hidden-content {
   }
 }
 
-/*# sourceMappingURL=style.min.css.map */
+/*# sourceMappingURL=styles.min.css.map */
