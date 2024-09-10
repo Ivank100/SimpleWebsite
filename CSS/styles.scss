@@ -145,7 +145,7 @@ body.loaded .hidden-content {
     
     }
     header.header-scrolled {
-        background-color: #2e3842; /* Background color when scrolled */
+        background-color: #2e3842 !important; /* Background color when scrolled */
         justify-content: space-between;
         align-items: center;
         
