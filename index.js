@@ -1,6 +1,18 @@
-    
- 
-    
+document.addEventListener("DOMContentLoaded", function() {
+    // Check if the animation has already played by checking a flag in localStorage
+    if (!localStorage.getItem('animationPlayed')) {
+        setTimeout(function() {
+            document.body.classList.add('loaded'); // Trigger the transition
+            // Set a flag in localStorage to prevent the animation from replaying
+            localStorage.setItem('animationPlayed', 'true');
+        }, 1000); // Match this timing with the duration of the fadeIn animation
+    } else {
+        // Immediately add the 'loaded' class if the animation has already played
+        document.body.classList.add('loaded');
+    }
+});
+
+
     const sidebar = document.querySelector('.sidebar');
     const heroBanner = document.querySelector('.hero-banner');
 
